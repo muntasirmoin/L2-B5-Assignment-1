@@ -1,6 +1,25 @@
+# 2. What is the use of the keyof keyword in TypeScript? Provide an example.
+
+## keyof keyword
+
+In TypeScript the keyof keyword is a type of operator. keyof keyword is used to extract the key type from an object type.
+
+### Example
+
+```
+type Book = {
+    title: string;
+    author: string;
+    year: number;
+};
+
+type BookKeys = keyof Book;
+// BookKeys is "title" | "author" | "year"
+```
+
 # 7. Provide an example of using union and intersection types in TypeScript.
 
-## Example of union
+## Union
 
 A union type describes a value that can be one of several types. We use the vertical bar (|) to separate each type, so number | string | boolean is the type of a value that can be a number, a string, or a boolean.
 Union types in TypeScript allow us to define a variable or parameter that can hold values of multiple types.
@@ -25,7 +44,7 @@ Union types in TypeScript allow us to define a variable or parameter that can ho
     ```
 ````
 
-## Example of intersection
+## Intersection
 
 Intersection types are closely related to union types, but they are used very differently. An intersection type combines multiple types into one. An intersection type creates a new type by combining multiple existing types. The intersection type is made using the '&' operator.
 
