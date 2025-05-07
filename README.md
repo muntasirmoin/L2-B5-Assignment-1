@@ -1,3 +1,17 @@
+# 1. What are some differences between interfaces and types in TypeScript?
+
+## Differences between interfaces and types in TypeScript
+
+The interface is a way to define the structure of an object.
+
+A type is like a label that describes the shape of data such as string, number, boolean etc.
+
+Interface is less flexible compared to type.
+
+Use interface for defining object shapes.
+
+Use type for unions, intersections, and complex type manipulations.
+
 # 2. What is the use of the keyof keyword in TypeScript? Provide an example.
 
 ## keyof keyword
