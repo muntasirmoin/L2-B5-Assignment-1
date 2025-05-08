@@ -78,6 +78,7 @@ type BookKeys = keyof Book;
 let num: Number = Input.One;
 console.log(num);
 
+```
 // string
 
 enum Input {
@@ -100,7 +101,7 @@ Union types in TypeScript allow us to define a variable or parameter that can ho
 
 ### Example:
 
-```
+````
 
 type student = {
 id: number;
@@ -118,7 +119,7 @@ bloodGroup: 'O+' | 'A+' | 'A-';
 
     ```
 
-```
+````
 
 ## Intersection
 
@@ -145,6 +146,8 @@ Name: 'Muntasir',
 course: "Math'
 
 }
+
+```
 
 ```
 
