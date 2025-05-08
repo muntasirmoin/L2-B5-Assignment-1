@@ -74,11 +74,11 @@ type BookKeys = keyof Book;
           Two,
   }
 
+  let num: Number = Input.One;
+  console.log(num); //Output: 1
   ```
 
-let num: Number = Input.One;
-console.log(num);
-
+```
 // string
 
 enum Input {
@@ -88,7 +88,8 @@ Two,
 }
 
 let num: Input = Input.One;
-console.log(Input[num]);
+console.log(Input[num]); //Output: One
+```
 
 ```
 
@@ -148,6 +149,10 @@ Name: 'Muntasir',
 course: "Math'
 
 }
+
+```
+
+```
 
 ```
 
