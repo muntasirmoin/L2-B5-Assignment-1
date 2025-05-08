@@ -12,6 +12,36 @@
 
 # 2. What is the use of the keyof keyword in TypeScript? Provide an example.
 
+# 3. Explain the difference between any, unknown, and never types in TypeScript.
+
+## Difference between any, unknown, and never types in TypeScript
+
+- In type any, Any value can be assigned to a variable any. </br> Type unknown use when we don't know the type & want to ensure type safety. </br> Type never is commonly used for functions indicating that never return a value.
+
+- Example: </br>
+
+  - any
+
+  ```
+    let input: any = 42;
+    input = "42"
+  ```
+
+  - unknown
+
+  ```
+  let input : unknown = "Bangladesh"
+
+  ```
+
+  - never
+
+  ```
+    function input (input: string) : never {
+
+    }
+  ```
+
 ## keyof keyword
 
 In TypeScript the keyof keyword is a type of operator. keyof keyword is used to extract the key type from an object type.
