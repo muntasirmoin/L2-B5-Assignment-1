@@ -79,19 +79,27 @@ type BookKeys = keyof Book;
   ```
 
 ```
-// string
+    // string
 
-enum Input {
-Zero,
-One,
-Two,
-}
+    enum Input {
+                Zero,
+                One,
+                Two,
+                }
 
-let num: Input = Input.One;
-console.log(Input[num]); //Output: One
+        let num: Input = Input.One;
+        console.log(Input[num]); //Output: One
 
 
 ```
+
+# 5. What is type inference in TypeScript? Why is it helpful?
+
+- Type inference enables TypeScript to automatically infer the types of variables, function parameters and return values without the need for explicit declarations. It is helpful cause code is more concise and often more readable,don’t need to manually write types for every variable.
+
+# 6. How does TypeScript help in improving code quality and project maintainability?
+
+- TypeScript helps to write cleaner, more efficient code that is easier to understand and maintain code by providing a strong typing system, advanced features, and readability. TypeScript allows to catch errors and bugs during the development phase. This early detection of issues saves valuable time and effort in debugging and ensures a more stable codebase.
 
 # 7. Provide an example of using union and intersection types in TypeScript.
 
