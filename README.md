@@ -89,9 +89,7 @@ Two,
 
 let num: Input = Input.One;
 console.log(Input[num]); //Output: One
-```
 
-```
 
 ```
 
