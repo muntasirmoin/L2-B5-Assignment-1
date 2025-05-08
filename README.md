@@ -33,11 +33,11 @@ type BookKeys = keyof Book;
 
 ## 3. Explain the difference between any, unknown, and never types in TypeScript.
 
-### Difference between any, unknown, and never types in TypeScript
+- Difference between any, unknown, and never types in TypeScript
 
-- In type any, Any value can be assigned to a variable any. </br> Type unknown use when we don't know the type & want to ensure type safety. </br> Type never is commonly used for functions indicating that never return a value.
+  - In type any, Any value can be assigned to a variable any. </br> Type unknown use when we don't know the type & want to ensure type safety. </br> Type never is commonly used for functions indicating that never return a value.
 
-- Example: </br>
+        - Example: </br>
 
   - any
 
@@ -105,7 +105,7 @@ type BookKeys = keyof Book;
 
 ## 7. Provide an example of using union and intersection types in TypeScript.
 
-### Union
+- Union
 
 A union type describes a value that can be one of several types. We use the vertical bar (|) to separate each type, so number | string | boolean is the type of a value that can be a number, a string, or a boolean.
 Union types in TypeScript allow us to define a variable or parameter that can hold values of multiple types.
@@ -132,7 +132,7 @@ bloodGroup: 'O+' | 'A+' | 'A-';
 
 ````
 
-### Intersection
+- Intersection
 
 Intersection types are closely related to union types, but they are used very differently. An intersection type combines multiple types into one. An intersection type creates a new type by combining multiple existing types. The intersection type is made using the '&' operator.
 
@@ -157,13 +157,5 @@ Name: 'Muntasir',
 course: "Math'
 
 }
-
-```
-
-```
-
-```
-
-```
 
 ```
