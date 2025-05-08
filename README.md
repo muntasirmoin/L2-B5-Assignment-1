@@ -12,6 +12,23 @@
 
 # 2. What is the use of the keyof keyword in TypeScript? Provide an example.
 
+## keyof keyword
+
+In TypeScript the keyof keyword is a type of operator. keyof keyword is used to extract the key type from an object type.
+
+### Example
+
+```
+type Book = {
+    title: string;
+    author: string;
+    year: number;
+};
+
+type BookKeys = keyof Book;
+// BookKeys is "title" | "author" | "year"
+```
+
 # 3. Explain the difference between any, unknown, and never types in TypeScript.
 
 ## Difference between any, unknown, and never types in TypeScript
@@ -41,23 +58,6 @@
 
     }
   ```
-
-## keyof keyword
-
-In TypeScript the keyof keyword is a type of operator. keyof keyword is used to extract the key type from an object type.
-
-### Example
-
-```
-type Book = {
-    title: string;
-    author: string;
-    year: number;
-};
-
-type BookKeys = keyof Book;
-// BookKeys is "title" | "author" | "year"
-```
 
 # 7. Provide an example of using union and intersection types in TypeScript.
 
