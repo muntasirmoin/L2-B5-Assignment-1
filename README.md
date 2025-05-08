@@ -59,6 +59,38 @@ type BookKeys = keyof Book;
     }
   ```
 
+# 4. What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
+
+## Use of enums :
+
+- enums allow to define a set of named constants. Using enums improve readability, type safety & maintainability of code. TypeScript provides both numeric & string based enums.
+- Example of a numeric & string enum :
+
+  ```
+   //numeric
+   enum Input {
+  Zero,
+  One,
+  Two,
+  }
+  ```
+
+let num: Number = Input.One;
+console.log(num);
+
+// string
+
+enum Input {
+Zero,
+One,
+Two,
+}
+
+let num: Input = Input.One;
+console.log(Input[num]);
+
+```
+
 # 7. Provide an example of using union and intersection types in TypeScript.
 
 ## Union
@@ -68,13 +100,14 @@ Union types in TypeScript allow us to define a variable or parameter that can ho
 
 ### Example:
 
-````
-  type student = {
-        id: number;
-        name:string;
-        gender: 'male' | 'female';
-        bloodGroup: 'O+' | 'A+' | 'A-';
-    }
+```
+
+type student = {
+id: number;
+name:string;
+gender: 'male' | 'female';
+bloodGroup: 'O+' | 'A+' | 'A-';
+}
 
     const Student_1 : student = {
         id: 12,
@@ -84,7 +117,8 @@ Union types in TypeScript allow us to define a variable or parameter that can ho
     }
 
     ```
-````
+
+```
 
 ## Intersection
 
@@ -92,23 +126,26 @@ Intersection types are closely related to union types, but they are used very di
 
 ### Example
 
-````
- type Student = {
-       id: number;
-       name: string;
-   }
+```
 
-   type Course = {
-       course: string;
-   }
+type Student = {
+id: number;
+name: string;
+}
 
-   type StudentCourse = Student & Course;
+type Course = {
+course: string;
+}
 
-   const studentActiveCourse: StudentCourse  = {
-       id: 1,
-       Name: 'Muntasir',
-       course: "Math'
+type StudentCourse = Student & Course;
 
-   }
-   ```
-````
+const studentActiveCourse: StudentCourse = {
+id: 1,
+Name: 'Muntasir',
+course: "Math'
+
+}
+
+```
+
+```
